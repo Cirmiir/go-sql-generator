@@ -1,0 +1,6 @@
+DELIMITER //
+CREATE PROCEDURE {{.StoreProcedureName}}{{.Structure.ParameterSection}} 
+BEGIN
+{{.Structure.Query}}{{if .Structure.WhereCondition}}{{.Structure.WhereCondition}}{{end}};
+END//
+DELIMITER ;

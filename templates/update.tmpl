@@ -1,0 +1,2 @@
+{{$cnt:=(minus (len .Columns) 1)}}UPDATE {{.TableName}} SET
+{{range $index, $val := .Columns}}	{{$val.ColumnName}} = {{$val.ParameterName}} {{if (ne $index $cnt)}},{{end}}{{end}}

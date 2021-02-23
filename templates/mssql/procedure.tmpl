@@ -1,0 +1,5 @@
+CREATE PROCEDURE {{.StoreProcedureName}}{{.Structure.ParameterSection}} 
+AS
+BEGIN
+{{.Structure.Query}} {{if .Structure.WhereCondition}}{{.Structure.WhereCondition}}{{end}}
+END

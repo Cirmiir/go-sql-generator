@@ -1,0 +1,3 @@
+{{$cnt:=(minus (len .Columns) 1)}}SELECT
+{{range $index, $val := .Columns}}	{{$val.ColumnName}}{{if (ne $index $cnt)}},{{end}}
+{{end}}FROM {{.TableName}}

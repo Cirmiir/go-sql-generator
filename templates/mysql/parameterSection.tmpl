@@ -1,0 +1,1 @@
+{{$cnt:=(minus (len .Columns) 1)}}({{range $index, $val := .Columns}}IN {{$val.ParameterName}} {{$val.ColumnType}}{{if (ne $index $cnt)}},{{end}}{{end}})

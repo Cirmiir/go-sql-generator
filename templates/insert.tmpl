@@ -1,0 +1,2 @@
+{{$cnt:=(minus (len .Columns) 1)}}INSERT INTO {{.TableName}} ({{range $index, $val := .Columns}}{{$val.ColumnName}}{{if (ne $index $cnt)}}, {{end}}{{end}}) 
+VALUES({{range $index, $val := .Columns}}{{$val.ParameterName}}{{if (ne $index $cnt)}},{{end}}{{end}})
