@@ -1,7 +1,7 @@
 # go-sql-generator
 
-Simple sql stored procedure generator. 
-The resulting stored procedure can support select, update, delete, insert the row. The store procedure is generated based on table structure.
+Simple sql stored procedures generator. 
+The resulting is stored procedures that support select, update, delete, insert the row. The store procedures is generated based on table structure.
 
 The template can be modified for each database driver.
 
